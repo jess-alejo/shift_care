@@ -1,0 +1,5 @@
+Style/StringLiterals:
+  Enabled: true
+  EnforcedStyle: double_quotes
+  Exclude:
+    - "spec/spec_helper.rb"
