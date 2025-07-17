@@ -1,0 +1,11 @@
+# frozen_string_literal: true
+
+class Client
+  attr_reader :id, :full_name, :email
+
+  def initialize(id:, full_name:, email:)
+    @id = id
+    @full_name = full_name
+    @email = email
+  end
+end
