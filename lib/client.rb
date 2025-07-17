@@ -8,4 +8,12 @@ class Client
     @full_name = full_name
     @email = email
   end
+
+  def to_h
+    {
+      id: @id,
+      full_name: @full_name,
+      email: @email
+    }
+  end
 end

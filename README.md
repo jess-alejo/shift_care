@@ -78,6 +78,10 @@ shift_care/
 - Builder classes follow a common `#build` interface for extensibility.
 - JSON is the default supported format; others are pluggable.
 - Output formatting is handled by a separate display class (`Display`) for maintainability.
+- Default screen width is 60 characters. It can be overridden using `--screen-width=[WIDTH]` flag.
+  ```bash
+  ruby main.rb search jane --screen-width=80
+  ```
 
 ## Known Limitations
 
