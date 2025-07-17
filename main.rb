@@ -17,7 +17,7 @@ require "client_search"
 require "duplicate_checker"
 require "display"
 
-APP_TITLE = "ShiftCare: Client Directory"
+Display.app_title = "ShiftCare: Client Directory"
 
 command, arg = ARGV
 

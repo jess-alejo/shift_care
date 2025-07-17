@@ -2,16 +2,21 @@
 
 class Display
   @@screen_width = 60
+  @@app_title = "Client Directory CLI"
 
   class << self
     def screen_width=(screen_width = 60)
       @@screen_width = screen_width
     end
 
+    def app_title=(app_title)
+      @@app_title = app_title
+    end
+
     def print_header
       puts "\n"
       puts "-" * @@screen_width
-      puts APP_TITLE.center(@@screen_width)
+      puts @@app_title.center(@@screen_width)
       puts "-" * @@screen_width
     end
 

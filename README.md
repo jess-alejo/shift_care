@@ -36,6 +36,7 @@ Search for a name (case-insensitive):
 
 ```bash
 ruby main.rb search jane
+ruby main.rb search "Jane Smith"
 ```
 
 Find duplicate email entries:
@@ -74,7 +75,7 @@ shift_care/
 ## Assumptions and Decision Made
 
 - The dataset is small enough to be loaded entirely in memory.
-- Email is treated as a unique identifier when checking for duplicates.
+- Email is treated as a unique identifier (case-sensitive) when checking for duplicates.
 - Builder classes follow a common `#build` interface for extensibility.
 - JSON is the default supported format; others are pluggable.
 - Output formatting is handled by a separate display class (`Display`) for maintainability.
