@@ -13,7 +13,7 @@ RSpec.describe Client do
     it "assigns the given attributes" do
       expect(client.id).to eq(id)
       expect(client.full_name).to eq(full_name)
-      expect(client.email).to eq(full_name)
+      expect(client.email).to eq(email)
     end
   end
 
